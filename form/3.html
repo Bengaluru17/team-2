@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=month] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    background-color: white;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+<body>
+<h2>Third Challenge</h2>
+<br>
+<h3>Form3</h3>
+<div>
+  <form action="#" method="post">
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="first_name" >
+    <br>
+    <label for="address">Address</label>
+    <input type="text" id="address" name="address">
+    <br>
+    Gender:  <input type="radio" value="male" name="gender">Male
+             <input type="radio" value="female" name="gender">Female
+    <br>
+    Birthday (month and year):<input type="month" name="bdaymonth">
+    <br>
+    Telephone:<input type="tel" name="usrtel">
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>
