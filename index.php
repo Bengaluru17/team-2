@@ -97,15 +97,15 @@ function readUserData()
 	request.setRequestHeader('app_key', 'ee5299aad61dff8cab254df485a6de2b');
 
 	request.onreadystatechange = function () {
-	if (this.readyState === 4) {
-	//accept[0]=$.parseJSON(this.responseText);
+	if (this.readyState === 4 && this.status===200) {
+
 <<<<<<< HEAD
-	//accept=JSON.parse(this.responseText);
+	
 	accept=this.responseText[148]+this.responseText[149];
 	if(parseInt(accept)<60)
-		alert("lol");
+		alert("Sorry we don't recognise you!");
 	else
-		alert("yo");
+		alert("Hello user");
 =======
 	alert($.parseJSON(this.responseText));
 >>>>>>> 25c7cc4377ca3b0fa5a37982efeed0a8ec205d74
