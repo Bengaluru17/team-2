@@ -99,12 +99,16 @@ function readUserData()
 	request.onreadystatechange = function () {
 	if (this.readyState === 4) {
 	//accept[0]=$.parseJSON(this.responseText);
+<<<<<<< HEAD
 	//accept=JSON.parse(this.responseText);
 	accept=this.responseText[148]+this.responseText[149];
 	if(parseInt(accept)<60)
 		alert("lol");
 	else
 		alert("yo");
+=======
+	alert($.parseJSON(this.responseText));
+>>>>>>> 25c7cc4377ca3b0fa5a37982efeed0a8ec205d74
     console.log('Status:', this.statusText);
     console.log('Headers:', this.getAllResponseHeaders());
     console.log('Body:', this.responseText);
@@ -112,7 +116,11 @@ function readUserData()
 };
 
 var body = {
+<<<<<<< HEAD
   'image': "http://media.kairos.com/kairos-elizabeth.jpg",
+=======
+  'image': "http://2.bp.blogspot.com/-YdXmeVkbbRg/TcmT4q3nIxI/AAAAAAAAC8Y/zO1eNeDONpg/s1600/tumblr_lkojzzHVcX1qzffago1_500.png",
+>>>>>>> 25c7cc4377ca3b0fa5a37982efeed0a8ec205d74
   'gallery_name': 'MyGallery2',
   'subject_id': '1'
 };
