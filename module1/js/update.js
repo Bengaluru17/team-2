@@ -109,8 +109,6 @@ var Update = function() {
             return result
         }
 
-        // Since main version strings are equal, compare pre-release
-        // strings. First perform null checks.
         if (pa.pre == null && pb.pre == null) {
             return 0
         } else if (pa.pre == null) {

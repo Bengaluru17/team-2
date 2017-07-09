@@ -82,8 +82,6 @@ var Util = function() {
 
     function addChildren()
     {
-        // If no children nodes are specified, then there is nothing to
-        // do.
         if (arguments.length <= 1) {
             return
         }
@@ -114,8 +112,6 @@ var Util = function() {
 
     function setChildren()
     {
-        // If no children nodes are specified, then there is nothing to
-        // do.
         if (arguments.length <= 1) {
             return
         }

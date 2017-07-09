@@ -1,8 +1,7 @@
 'use strict'
 
-
 var Units = {
-    // 6-7 split (6 with left hand)
+
     'main': [
         // Example 1
         {
@@ -943,8 +942,6 @@ var Units = {
     // Label to be used to identify the main units
     'mainLabel': '6-7 split',
 
-    // The message to be displayed to the user to make sure he really
-    // wants to move to the main units
     'mainConfirmMessage':
         '',
 
