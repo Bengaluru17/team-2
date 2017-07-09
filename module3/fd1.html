@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: white;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+<body>
+<h2>First Challenge</h2>
+<br>
+<h3>Form1</h3>
+<div>
+  <form>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="first_name" id = "fname">
+    <br>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="last_name" id = "lname">
+    <br>
+    <input type="button" id="button" value="Submit" name="Submit" onclick="validateForm()">
+  </form>
+</div>
+<script>
+function validateForm() {
+    var x = document.getElementById('fname').value;
+    var y = document.getElementById('lname').value;
+    if(x==null){
+      document.getElementById('fname').style.color="red";
+    }
+    else if(y==null){
+      document.getElementById('lname').style.color="red";
+    }
+    else if (x == "Mashrin" && y == "Kumar") {
+      document.getElementById('fname').style.color="green";
+      document.getElementById('lname').style.color="green";
+        alert("Good");
+    }
+    else if (x!= "Mashrin" && y == "Kumar") {
+      document.getElementById('fname').style.color="red";
+    }
+    else if(y!="Kumar" && x == "Mashrin") {
+      document.getElementById('lname').style.color="red";
+    }
+    else
+    {
+      document.getElementById('fname').style.color="red";
+      document.getElementById('lname').style.color="red";
+    }
+
+}
+</script>
+</body>
+</html>
