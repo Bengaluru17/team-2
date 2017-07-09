@@ -30,7 +30,7 @@ button {
 
 /* Float cancel and signup buttons and add an equal width */
 .signupbtn,.cancelbtn {
-	position:relative;
+    position:relative;
     float: 600px;
     width: 10%;
 }
@@ -56,49 +56,31 @@ button {
 </style>
 <body style="background:url(signupimage.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;background-size: cover;">
-<h2 style="margin: 0 auto; text-align: center;color:white;font size: "60"">REGISTER </h2>
-<img src ="logo.jpg"/>
+<h2 style="margin: 20 auto; text-align: center;color:white;fontsize: 60">REGISTER</h2>
 
 <form action="/action_page.php" style="border:5px solid #ccc">
   <div class="container" style="margin: 0 auto; text-align: center;">
-   <label style ="color:white; "><b>First Name</b></label>
-    <input type="text" placeholder="First Name" name="name" style="width:150px;position:relative;left 20px;" required><br/>
-	 <label style ="color:white;"><b>Last Name</b></label>
-    <input type="text" placeholder="Last Name" name="email" style="width:150px;position:relative;left 20px;" required><br/>
-   <label style="width:150px;position:relative; right :50px; color:white;" ><b>Sex</b></label>
-
-   <input type="radio" name="gender" value="male" ; checked style="position:relative; right:20px "><label style ="color:white;"><b> Male<b></label><br/>
-        <input type="radio" name="gender" value="female" ><label style ="color:white;"><b> Female</b></label><br/>
-        <input type="radio" name="gender" value="other" style ="color:white"><label style ="color:white;"><b> Other<b></label><br/>
-        <br/>
-    <label style ="color:white;"><b>Phone Number</b></label>
-    <input type="text" placeholder="Phone Number" name="num" style="width:150px;position:relative; left :50px;"required><br/>
-	  <label style ="color:white;"><b>Education</b></label>
-    <input type="text" placeholder="Education" name="e" style="width:150px;position:relative; left :65px;"required><br/>
- 
- 
-
-    <label style ="color:white;"><b>Password </b></label>
-    <input type="password" placeholder="Enter Password" name="psw" style="width:150px; position:relative; left :70px;"required><br/>
-
-    <label style ="color:white;"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" style="width:150px;position:relative; left :40px;"required><br/>
-	</form>
-<form action="/action_page.php">
+  <label style ="color:white;"><b>First Name</b></label>
+  <input type="text" placeholder="First Name" name="name" style="width:150px;position:relative;left: 63px;" required><br/>
+  <label style ="color:white;"><b>Last Name</b></label>
+  <input type="text" placeholder="Last Name" name="email" style="width:150px;position:relative;left :63px;" required><br/>
+  <label style ="color:white;"><b>Phone Number</b></label>
+  <input type="text" placeholder="Phone Number" name="num" style="width:150px;position:relative; left :50px;"required><br/>
+  <label style ="color:white;"><b>Education</b></label>
+  <input type="text" placeholder="Education" name="e" style="width:150px;position:relative; left :65px;"required><br/>
+  <label style ="color:white;"><b>Password </b></label>
+  <input type="password" placeholder="Enter Password" name="psw" style="width:150px; position:relative; left :70px;"required><br/>
+  <label style ="color:white;"><b>Repeat Password</b></label>
+  <input type="password" placeholder="Repeat Password" name="psw-repeat" style="width:150px;position:relative; left :40px;"required><br/>
+  <br>
+  <label style ="color:white;"><b>Upload the image of the student</b></label>
   <input style ="color:white" type="file" name="pic" accept="image/*">
-  
+  <br>
 </form>
 <br/>
-    <input style ="color:white" type="checkbox" checked="checked" > Remember me
-    <p style ="color:white">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-
     <div class="clearfix">
-      <button type="button" class="cancelbtn">Cancel</button>
       <button type="submit" class="signupbtn">Sign Up</button>
     </div>
   </div>
-     
-  
-
 </body>
 </html>
