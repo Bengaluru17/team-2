@@ -30,10 +30,10 @@ def gen_handy_string(alphs, position, save):
         """Finding Corresponding Directory"""
 
         if i in string.ascii_lowercase:
-            BASE_DIR = r'C:\NOS\Coding_2\cfgFG\Images\Lower'
+            BASE_DIR = r'C:\NOS\Coding_2\CFG\Images\Lower'
 
         elif i in string.ascii_uppercase:
-            BASE_DIR = r'C:\NOS\Coding_2\cfgFG\Images\Upper'
+            BASE_DIR = r'C:\NOS\Coding_2\CFG\Images\Upper'
 
         final_char_path = os.path.join(BASE_DIR, i)
 

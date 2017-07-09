@@ -8,8 +8,8 @@ window = tk.Tk()
 window.title('main_soft')
 window.geometry("1000x1000")
 
-path = r"C:\NOS\Coding_2\cfgFG\Advanced\Advanced_0.png"
-json_dict = json.load(open(r"C:\NOS\Coding_2\cfgFG\Advanced\Advanced_0.json", 'r'))
+path = r"C:\NOS\Coding_2\CFG\Advanced\Advanced_0.png"
+json_dict = json.load(open(r"C:\NOS\Coding_2\CFG\Advanced\Advanced_0.json", 'r'))
 
 #window.configure(background = 'black')
 
@@ -18,8 +18,8 @@ im = im.resize((534, 800))
 
 img = ImageTk.PhotoImage(im)
 
-path = r"C:\NOS\Coding_2\cfgFG\Advanced\Advanced_0.png"
-json_dict = json.load(open(r"C:\NOS\Coding_2\cfgFG\Advanced\Advanced_0.json", 'r'))
+path = r"C:\NOS\Coding_2\CFG\Advanced\Advanced_0.png"
+json_dict = json.load(open(r"C:\NOS\Coding_2\CFG\Advanced\Advanced_0.json", 'r'))
 
 im = Image.open(path)
 im = im.resize((534, 800))
