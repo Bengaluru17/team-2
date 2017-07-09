@@ -1,81 +1,34 @@
-<!DOCTYPE html>
-<html>
-<style>
-/* Full-width input fields */
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
+<?php define('DB_HOST', 'localhost');
+ define('DB_NAME', 'practice');
+ define('DB_USER','root');
+ define('DB_PASSWORD','');
+ 
+ $con=mysql_connect(DB_HOST,DB_USER,DB_PASSWORD)
+ or die("Failed to connect to MySQL: " . mysql_error());
+ $db=mysql_select_db(DB_NAME,$con)
+ or die("Failed to connect to MySQL: " . mysql_error());
+ function NewUser()
+ { $First Name = $_POST['name'];
+ $Last Name =$_POST['email'];
+ $Education = $_POST['e'];
+ $Phone Number = $_POST['num'];
+ $Password = $_POST['psw'];
+ $Repeat Password =$_POST('psw-repeat');
+ 
+ $query = "INSERT INTO websiteusers (name,email,e,num,psw,psw-repeat) VALUES ('$Frist Name','$Last Name','$Education','$Education','$Password',$Repeat Password)"; 
+ $data = mysql_query ($query)or die(mysql_error()); 
+ if($data) 
+ { echo "YOUR REGISTRATION IS COMPLETED..."; } }
+ function SignUp() { if(!empty($_POST['user'])) 
+ //checking the 'user' name which is from Sign-Up.html, is it empty or have some text
+ { $query = mysql_query("SELECT * FROM websiteusers WHERE userName = '$_POST[user]' AND pass = '$_POST[pass]'") 
+ or 
+ die(mysql_error()); 
+ if(!$row = mysql_fetch_array($query)
+ or die(mysql_error())) { newuser(); } 
+ else { echo "SORRY...YOU ARE ALREADY REGISTERED USER..."; } 
+ }
+ }
+ if(isset($_POST['submit'])) { SignUp(); }
+ ?> 
 
-/* Set a style for all buttons */
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-    padding: 14px 20px;
-    background-color: #f44336;
-}
-
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn,.signupbtn {
-    float: left;
-    width: 50%;
-}
-
-/* Add padding to container elements */
-.container {
-    padding: 16px;
-}
-
-/* Clear floats */
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-    .cancelbtn, .signupbtn {
-       width: 100%;
-    }
-}
-</style>
-<body>
-
-<h2>Signup Form</h2>
-
-<form action="/action_page.php" style="border:1px solid #ccc">
-  <div class="container">
-    <label><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-
-    <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <label><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-    <input type="checkbox" checked="checked"> Remember me
-    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-
-    <div class="clearfix">
-      <button type="button" class="cancelbtn">Cancel</button>
-      <button type="submit" class="signupbtn">Sign Up</button>
-    </div>
-  </div>
-</form>
-
-</body>
-</html>
